@@ -1,0 +1,17 @@
+
+/* ----------- For screens 768px and larger ----------- */
+@media (min-width: 768px) {
+	body {
+    background: rgb(237, 197, 197);
+  }
+}
+
+/* ----------- For screens 1200px wide and larger----------- */
+@media (min-width: 1200px) {    
+  body {
+    background: #C8D6FF;
+
+ }
+}
+
+
