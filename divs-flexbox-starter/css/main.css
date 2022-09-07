@@ -139,15 +139,17 @@ p {
 }
 span {
     font-style: italic;
+    color:#F24C27
 }
-h1 {
+h1, h2 {
     font-family: 'Poiret One', cursive;
     color:#F2EAC2 ;
 }
 nav {
-    color:#D9B504;
+    color:#226B73;
     display: flex;
     justify-content: flex-end;
+    border-bottom: #D9B504;
     
 }
 ul li {
@@ -156,6 +158,9 @@ ul li {
     align-items:center;
     padding-inline: 5%;
     font-weight: 200;
+}
+footer {
+    border-top: #F24C27 solid 1px;
 }
 
 
