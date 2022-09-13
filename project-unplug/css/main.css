@@ -377,6 +377,25 @@ textarea {
     margin: 0;
   }
 
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; } 
+        
+  .embed-container iframe,
+  .embed-container object, 
+  .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+   }
+
+  /* DIY map entry 
+
   .map {
     position: relative;
     padding-bottom: 75%;
@@ -390,7 +409,8 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-   }
+   } 
+   */
 
   /**********FAQ page *********/
   .faq {
@@ -666,6 +686,9 @@ textarea {
 .mission-content p {
     width: 45%;
 }
+.embed-container {
+  padding: 45.5%;
+}
 
 .contact-section .content-wrapper h2 {
     width: 80%;
@@ -780,12 +803,21 @@ textarea {
       font-size: 1.875em;
     }
 
+    .embed-container {
+      padding: 45.5%;
+    }
+
     /** FAQ desktop **/
     .faq h2 {
       width: 100%;
       font-size: 3em;
-      line-height: 1;
     }
+
+    .faq h4,
+    .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
 }
 
 /* ==========================================================================
