@@ -83,7 +83,21 @@ textarea {
   resize: vertical;
 }
 
+/* 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+   .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* 
+
+==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -240,12 +254,13 @@ textarea {
    /******* Mobile Styles- Homepage *****/
    
    .hero-area {
+    background: url(../img/womanbridge.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: url(../img/womanbridge.jpg) center;
-    background-size: cover;
-    min-height: 500px;
    }
 
    .hero-area h1 {
@@ -256,11 +271,11 @@ textarea {
   }
 
   aside {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: #527158;
   }
 
   aside .form {
@@ -302,28 +317,26 @@ textarea {
     margin-bottom: 60px;
   }
 
-  .features article{
-    width: 45%;
+  .features article {
+    width: 63%;
     margin: 30px 0;
   }
 
-  .features .feautures-items {
+  .features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
-
-  /*.features-item-description p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }*/
-
+  
+  .features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
+  }
+  
   .features p {
-    margin: 0;
     text-align: center;
+    margin: 0;
   }
 
   .reviews {
@@ -345,14 +358,11 @@ textarea {
   .reviews h2 {
     margin-bottom: 40px;
     line-height: 1;
-    padding-bottom: 40px;
   }
 
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
-   padding-top: 20px;
-
   }
 
  /*********** About Page **********/
@@ -650,7 +660,8 @@ textarea {
     width: 65%;
     margin: 100px 0;
   }
-  .footer-content {
+
+  footer .footer-content {
     display: flex;
     justify-content:space-between;
     align-items: center;
