@@ -242,10 +242,12 @@ textarea {
     align-items: center;
   }
   
-  footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  footer .social-icons i {
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #527158;
+    font-size: 2.5em;
+    padding: 20px;
   }
   footer .copyright {
     margin: 20px 0;
@@ -268,9 +270,10 @@ textarea {
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500; 
     line-height: 1.2; 
+    padding: 30px;
   }
 
-  aside {
+  .form-content-wrapper {
     background-color: #527158;
     display: flex;
     justify-content: center;
@@ -278,8 +281,18 @@ textarea {
     flex-flow: row wrap;
   }
 
-  aside .form {
-    margin-top: 30px;
+  .form-description h3, 
+  p {
+    margin: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  .form {
+    margin: 0 30px 30px 30px;
   }
 
   input[type=text] {
@@ -320,6 +333,10 @@ textarea {
   .features article {
     width: 63%;
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .features .features-items {
@@ -342,6 +359,7 @@ textarea {
   .reviews {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-flow: row wrap;
     background: #2a423a;
   }
@@ -363,6 +381,10 @@ textarea {
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
+  }
+
+  .reviews p {
+    margin: 0;
   }
 
  /*********** About Page **********/
@@ -636,23 +658,35 @@ textarea {
 
   /** reviews **/
 
-  .reviews article {
+  .reviews .content-wrapper {
+    margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 30px;
   }
 
   .reviews h2 {
     width: 85%;
   }
 
-  .reviews article div,
-  .reviews article figure {
+  .reviews img {
     width: 49%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
   }
 
   .reviews h3 {
     width: 75%;
     margin: 0;
+  }
+  .lacrue-team {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 49%;
   }
 
   /** Footer **/
@@ -769,38 +803,45 @@ textarea {
     font-size: 3.75em;
   }
 
-  aside .content-wrapper {
+  .form-content-wrapper {
+    padding: 60px;
     justify-content: space-around;
+    align-items: center;
   }
 
-  aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
+  .form-content-wrapper .form-description,
+  .form-content-wrapper .form {
         width: 30%;
     }
 
-    .form-description p {
+  .form-description p {
       font-size: 1.125em;
-    }
+  }
 
-    .features h2 {
+  .features h2 {
       width: 90%;
-    }
+  }
 
-    .features article {
+  .features article {
       flex-basis: 33%;
-    }
+  }
 
-    .reviews article div {
-      width: 42%;
-    }
+  .reviews .content-wrapper {
+      margin: 0;
+  }
 
-    .reviews h2 {
+  .reviews h2 {
       padding-bottom: 50px;
-    }
+  }
+  .reviews .lacrue-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-    footer h4 {
+  footer h4 {
       font-size: 1.875em;
-    }
+  }
 
 
     /** About page desktop **/
