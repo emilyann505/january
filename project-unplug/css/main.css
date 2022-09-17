@@ -898,6 +898,12 @@ textarea {
   footer h4 {
       font-size: 1.875em;
   }
+  .footer-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
 
     /** About page desktop **/
