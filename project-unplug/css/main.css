@@ -333,10 +333,6 @@ textarea {
   .features article {
     width: 63%;
     margin: 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
 
   .features .features-items {
@@ -348,7 +344,8 @@ textarea {
   
   .features i {
     font-size: 3.75em;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
+    padding-left: 40%;
   }
   
   .features p {
@@ -445,33 +442,46 @@ textarea {
    */
 
   /**********FAQ page *********/
-  .faq {
-    background-color: #527158;
+  .questions {
+    background: #527158;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
 
-  .faq .content-wrapper {
+   .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 50px 0 0 0;
+    margin: 50px 20px;
   }
-  .faq h2 {
-    margin-bottom: 40px;
+  .questions h2 {
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    margin-top: 30px;
     line-height: 1;
   }
 
-  .faq-content {
+  .questions-content {
     margin-bottom: 50px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .questions-content p {
+    margin: 0;
+    text-align: left;
+   
   }
 
-  .faq-content h4 {
+  .questions-content  {
     line-height: 1.333;
   }
+
+  
   
 
 /* ==========================================================================
@@ -624,15 +634,15 @@ textarea {
   }  
 
   /*Aside*/
-  aside .content-wrapper {
+ .form-content-wrapper {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
   }
 
-  aside .content-wrapper .form-descripton,
-  aside .content-wrapper .form {
+ .form-content-wrapper .form-descripton,
+ .form-content-wrapper .form {
     width:40%;
     margin: 0;
   }
@@ -650,8 +660,8 @@ textarea {
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
-
   }
+  
   .features .features-item-description {
     width: 62%;
   }
@@ -663,30 +673,40 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     padding: 30px;
   }
 
   .reviews h2 {
-    width: 85%;
+    width: 100%;
+  }
+  .reviews article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .reviews img {
+  .reviews figure {
     width: 49%;
     display: flex;
     justify-content: center;
-    flex-basis: 50%;
+    align-items: center;
   }
 
   .reviews h3 {
-    width: 75%;
+    width: 100%;
     margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    
   }
+
   .lacrue-team {
-    width: 49%;
+    width: 50%;
+    margin: 20px;
     display: flex;
-    justify-content: center;
-    flex-basis: 49%;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   /** Footer **/
@@ -713,6 +733,8 @@ textarea {
 
   footer .copyright {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   footer p {
@@ -775,6 +797,29 @@ textarea {
   header {
     padding: 15px 0;
   }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-weight: 700;
+   }
+
+   header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+   }
+
+   header nav ul li {
+    font-size: 1.125em;
+    display: flex;
+    justify-content: space-around;
+   }
  
   h2 {
     font-size: 2.25em;
@@ -807,23 +852,34 @@ textarea {
     padding: 60px;
     justify-content: space-around;
     align-items: center;
+    margin: 0;
+   
   }
 
   .form-content-wrapper .form-description,
   .form-content-wrapper .form {
-        width: 30%;
+        width: 50%;
     }
 
+  .form-description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    width: 100%;
+  }
   .form-description p {
       font-size: 1.125em;
   }
 
   .features h2 {
-      width: 90%;
+    width: 90%;
+    margin-bottom: 60px;
   }
 
   .features article {
-      flex-basis: 33%;
+    flex-basis: 33%;
   }
 
   .reviews .content-wrapper {
