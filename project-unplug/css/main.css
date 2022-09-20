@@ -344,10 +344,13 @@ textarea {
   
   .features i {
     font-size: 3.75em;
-    margin-bottom: 40px; 
-    padding-left: 40%;
+    margin-bottom: 40px;
   }
   
+  .icon {
+    display: flex;
+    align-items: center;
+  }
   .features p {
     text-align: center;
     margin: 0;
